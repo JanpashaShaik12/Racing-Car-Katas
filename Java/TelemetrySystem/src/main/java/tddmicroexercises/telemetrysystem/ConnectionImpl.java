@@ -1,10 +1,10 @@
 package tddmicroexercises.telemetrysystem;
 import java.util.Random;
 
-public class ConnectionClass implements Connection{
+public class ConnectionImpl implements Connection{
     private boolean onlineStatus;
     private Random connectionEventsSimulator;
-    public ConnectionClass(){
+    public ConnectionImpl(){
         connectionEventsSimulator = new Random(42);
     }
     @Override

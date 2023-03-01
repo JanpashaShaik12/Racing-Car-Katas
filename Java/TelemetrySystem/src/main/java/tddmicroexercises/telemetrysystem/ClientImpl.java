@@ -2,13 +2,13 @@ package tddmicroexercises.telemetrysystem;
 
 import java.util.Random;
 
-import static tddmicroexercises.telemetrysystem.TelemetryClient.DIAGNOSTIC_MESSAGE;
+import static tddmicroexercises.telemetrysystem.Constant.DIAGNOSTIC_MESSAGE;
 
-public class ClientClass implements Client{
+public class ClientImpl implements Client{
     private static boolean onlineStatus;
     private static  String diagnosticMessageResult = "";
     private Random connectionEventsSimulator;
-    public ClientClass(){
+    public ClientImpl(){
         connectionEventsSimulator = new Random(42);
     }
     @Override
