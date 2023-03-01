@@ -5,8 +5,8 @@ import java.util.Random;
 import static tddmicroexercises.telemetrysystem.Constant.DIAGNOSTIC_MESSAGE;
 
 public class ClientImpl implements Client{
-    private static boolean onlineStatus;
-    private static  String diagnosticMessageResult = "";
+    private  boolean onlineStatus;
+    private  String diagnosticMessageResult = "";
     private Random connectionEventsSimulator;
     public ClientImpl(){
         connectionEventsSimulator = new Random(42);
